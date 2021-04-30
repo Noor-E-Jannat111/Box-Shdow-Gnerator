@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet" />
+  <!-- Title -->
+  <title>Box Shadow Generator</title>
+  <!-- CSS file -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <!-- Heading Start -->
+  <h2>CSS Box Shadow Generator</h2>
+  <!-- Heading End -->
+
+  <!-- Body Background Color -->
+  <div class="d-flex body-bg-color">
+    <label>Select Body Backgrond:</label>
+    <input type="color" name="body-bg-color" value="#ffffff" />
+  </div>
+
+  <!-- Main Start -->
+  <div class="main">
+    <!-- Box Main Start -->
+    <div class="box-main-div">
+      <!-- Box Start -->
+      <div class="box">
+        <!-- Copy -->
+        <span data-clipboard-target="#code" class="copy">Copy CSS</span>
+        <!-- Background Color Start -->
+        <div class="d-flex">
+          <label>Select Box Backgrond:</label>
+          <input type="color" name="box-bg-color" value="#ffffff" />
+        </div>
+        <!-- Background Color End -->
+        <!-- CSS Code Start -->
+        <div id="code" class="css-code">
+          <span>box-shadow:</span>
+          <span name="inset"></span>
+          <span name="x">0px</span>
+          <span name="y">0px</span>
+          <span name="blur">20px</span>
+          <span name="spread">0px</span>
+          <span name="color">#4b4b4b</span>;
+        </div>
+        <!-- CSS Code End -->
+      </div>
+      <!-- Box End -->
+    </div>
+    <!-- Box Main End -->
+
+    <!-- Controls Start -->
+    <div class="controls">
+      <div class="control">
+        <label for="inset">Inset</label>
+        <input id="inset" type="checkbox" name="inset" value="" />
+      </div>
+
+      <div class="control">
+        <div class="d-flex">
+          <label>Horizontal Shadow Length:</label>
+          <span name="x">0px</span>
+        </div>
+        <input type="range" name="x" max="100" min="-100" value="0" data-suffix="px" />
+      </div>
+
+      <div class="control">
+        <div class="d-flex">
+          <label>Vertical Shadow Length:</label>
+          <span name="y">0px</span>
+        </div>
+        <input type="range" name="y" max="100" min="-100" value="0" data-suffix="px" />
+      </div>
+
+      <div class="control">
+        <div class="d-flex">
+          <label>Blur Radius:</label>
+          <span name="blur">20px</span>
+        </div>
+        <input type="range" name="blur" max="200" min="0" value="20" data-suffix="px" />
+      </div>
+
+      <div class="control">
+        <div class="d-flex">
+          <label>Spread Radius:</label>
+          <span name="spread">0px</span>
+        </div>
+        <input type="range" name="spread" max="200" min="0" value="0" data-suffix="px" />
+      </div>
+
+      <div class="control">
+        <label>Shadow Color:</label>
+        <input type="color" name="color" value="#4b4b4b" />
+      </div>
+    </div>
+    <!-- End Start -->
+  </div>
+  <!-- Main Start -->
+
+  <!-- Copyright -->
+  <div class="copyright">
+    Copyright © <span class="year"></span>
+    <a href="https://github.com/Noor-E-Jannat111" target="_blank" rel="noopener noreferrer">Jannat</a>
+    | All Rights Reserved
+  </div>
+
+  <!-- JS files -->
+  <!-- Clipboard library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js"></script>
+  <!-- Main JS -->
+  <script src="js/app.js"></script>
+</body>
+
+</html>
